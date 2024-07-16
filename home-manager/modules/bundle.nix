@@ -7,6 +7,7 @@
     ./qt.nix
 
     ./wms/hyprland.nix
+    ./wms/swaylock.nix
     ./wms/waybar.nix
   ];
 }

@@ -102,8 +102,8 @@
       };
 
       dwindle = {
-        pseudotile = true; 
-        preserve_split = true; 
+        pseudotile = true;
+        preserve_split = true;
       };
 
       gestures = {
@@ -177,9 +177,9 @@
         "$mainMod, tab, exec, pkill -x rofi || $scrPath/rofilaunch.sh w"
         "$mainMod, R, exec, pkill -x rofi || $scrPath/rofilaunch.sh f"
 
-        "$mainMod, P, exec, $scrPath/screenshot.sh s" 
-        "$mainMod CTRL, P, exec, $scrPath/screenshot.sh sf" 
-        "$mainMod ALT, P, exec, $scrPath/screenshot.sh m" 
+        "$mainMod, P, exec, $scrPath/screenshot.sh s"
+        "$mainMod CTRL, P, exec, $scrPath/screenshot.sh sf"
+        "$mainMod ALT, P, exec, $scrPath/screenshot.sh m"
         ",print, exec, $scrPath/screenshot.sh p  "
 
         "$mainMod, V, exec, pkill -x rofi || $scrPath/cliphist.sh c  "
@@ -272,7 +272,7 @@
       bindl = [
         ", F10, exec, $scrPath/volumecontrol.sh -o m"
         ", XF86AudioMute, exec, $scrPath/volumecontrol.sh -o m"
-        ", XF86AudioMicMute, exec, $scrPath/volumecontrol.sh -i m" 
+        ", XF86AudioMicMute, exec, $scrPath/volumecontrol.sh -i m"
         ", XF86AudioPlay, exec, playerctl play-pause"
         ", XF86AudioPause, exec, playerctl play-pause"
         ", XF86AudioNext, exec, playerctl next"
