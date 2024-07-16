@@ -21,7 +21,7 @@
         active-only = false;
         on-click= "activate";
         persistent-workspaces= {
-        }
+        };
     };
 
     "hyprland/window"= {
@@ -128,7 +128,7 @@
     backlight= {
         device= "intel_backlight";
         format= "{icon} {percent}%";
-        format-icons= ["", "", "", "", "", "", "", "", ""];
+        format-icons= ["" "" "" "" "" "" "" "" ""];
         on-scroll-up= "brightnessctl set 1%+";
         on-scroll-down= "brightnessctl set 1%-";
         min-length= 6;
@@ -151,7 +151,7 @@
         format-disabled= "";
         format-connected= " {num_connections}";
         format-connected-battery= "{icon} {num_connections}";
-        format-icons= ["󰥇", "󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"];
+        format-icons= ["󰥇" "󰤾" "󰤿" "󰥀" "󰥁" "󰥂" "󰥃" "󰥄" "󰥅" "󰥆" "󰥈"];
         tooltip-format= "{controller_alias}\n{num_connections} connected";
         tooltip-format-connected= "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}";
         tooltip-format-enumerate-connected= "{device_alias}";
