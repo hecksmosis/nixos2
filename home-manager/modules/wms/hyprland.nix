@@ -8,8 +8,10 @@
       "$scrPath" = "~/nixos/home-manager/modules/wms/scripts";
 
       # big pc conf, change for laptop
-      monitor = "HDMI-A-2,preferred,0x0,auto"
-      monitor = "HDMI-A-1,preferred,0x1080,auto"
+      monitor = [
+        "HDMI-A-1,preferred,0x1080,auto", 
+        "HDMI-A-2,preferred,0x0,auto"
+      ];
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -40,7 +42,7 @@
 
         touchpad = {
             natural_scroll = "no";
-        }
+        };
 
         sensitivity = 1.0; # -1.0 - 1.0, 0 means no modification.
         force_no_accel = 1;
