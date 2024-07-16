@@ -19,7 +19,7 @@
     gparted
     pcmanfm-qt
     blueman
-    network-manager-applet
+    networkmanagerapplet
 
     # Coding stuff
     gnumake

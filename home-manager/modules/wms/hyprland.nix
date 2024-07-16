@@ -7,9 +7,7 @@
       "$mainMod" = "SUPER";
       "$scrPath" = "~/nixos/home-manager/modules/wms/scripts";
 
-      # big pc conf, change for laptop
-      monitor = "HDMI-A-2,preferred,0x0,auto"
-      monitor = "HDMI-A-1,preferred,0x1080,auto"
+      monitor = ",preferred,auto,auto";
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -40,11 +38,11 @@
 
         touchpad = {
             natural_scroll = "no";
-        }
+        };
 
         sensitivity = 1.0; # -1.0 - 1.0, 0 means no modification.
         force_no_accel = 1;
-      }
+      };
 
       general = {
         gaps_in = 3;
@@ -86,10 +84,10 @@
       animations = {
         enabled = true;
 
-        bezier = "wind, 0.05, 0.9, 0.1, 1.05";
-        bezier = "winIn, 0.1, 1.1, 0.1, 1.1";
-        bezier = "winOut, 0.3, -0.3, 0, 1";
-        bezier = "liner, 1, 1, 1, 1";
+        bezier = ["wind, 0.05, 0.9, 0.1, 1.05"
+        "winIn, 0.1, 1.1, 0.1, 1.1"
+        "winOut, 0.3, -0.3, 0, 1"
+        "liner, 1, 1, 1, 1"];
 
         animation = [
           "windows, 1, 6, wind, slide"
@@ -106,10 +104,6 @@
       dwindle = {
         pseudotile = true; 
         preserve_split = true; 
-      };
-
-      master = {
-        new_is_master = true;
       };
 
       gestures = {
@@ -157,7 +151,7 @@
         "gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'"
         "gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha'"
         "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-      ]
+      ];
 
       bind = [
         "ALT, F4, killactive,"
@@ -303,7 +297,7 @@
         "$mainMod ALT, up, swapwindow, u"
         "$mainMod ALT, J, swapwindow, d"
         "$mainMod ALT, down, swapwindow, d"
-      ]
+      ];
 
       bindel = [
         ", F11, exec, $scrPath/volumecontrol.sh -o d"

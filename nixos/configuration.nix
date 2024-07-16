@@ -20,10 +20,10 @@
       LC_PAPER = "es_ES.UTF-8";
       LC_TELEPHONE = "es_ES.UTF-8";
       LC_TIME = "es_ES.UTF-8";
-    }
-  }
+    };
+  };
 
-  console.keymap = "es";
+  console.keyMap = "es";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; # Enabling flakes
   system.stateVersion = "24.05"; 
