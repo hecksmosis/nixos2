@@ -1,6 +1,7 @@
-{
+{ pkgs, ... }: {
   programs.swaylock = {
     enable = true;
+    package = pkgs.swaylock-effects;
     settings = {
       daemonize = true;
       show-failed-attempts = true;
@@ -37,7 +38,7 @@
       grace-no-mouse=true;
       grace-no-touch=true;
       datestr="%a, %B %e";
-      timestr="%I:%M %p";
+      timestr="%I:%M";
       fade-in=0.3;
       ignore-empty-password=true;
     };

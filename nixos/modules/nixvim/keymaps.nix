@@ -13,8 +13,14 @@
           inherit action key;
         })
         {
+          # Barbar
+          "<Tab>" = ":BufferNext<CR>";
+          "<S-Tab>" = ":BufferPrevious<CR>";
+          "<A->>" = ":BufferMoveNext<CR>";
+          "<A-<>" = ":BufferMovePrevious<CR>";
+
           # Open Neotree
-          "<leader>n" = ":Neotree<CR>";
+          "<C-n>" = ":Neotree toggle<CR>";
 
           # Esc to clear search results
           "<esc>" = ":noh<CR>";
@@ -33,10 +39,10 @@
           "<C-s>" = ":w<CR>";
 
           # navigate windows
-          "<leader>h" = "<C-w>h";
-          "<leader>j" = "<C-w>j";
-          "<leader>k" = "<C-w>k";
-          "<leader>l" = "<C-w>l";
+          "<C-h>" = "<C-w>h";
+          "<C-j>" = "<C-w>j";
+          "<C-k>" = "<C-w>k";
+          "<C-l>" = "<C-w>l";
 
           # resize with arrows
           "<C-Up>" = ":resize -2<CR>";

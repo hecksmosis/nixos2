@@ -82,7 +82,7 @@
     seatd
     xdg-desktop-portal-hyprland
     waybar
-    swaylock
+    swaylock-effects
 
     # Sound
     pipewire

@@ -5,7 +5,7 @@
       window.opacity = 0.9;
 
       font = {
-        size = 13.0;
+        size = 11.0;
         normal = {
           family = "JetBrains Mono";
           style = "Bold";
