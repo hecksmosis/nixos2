@@ -23,6 +23,9 @@
       ll = "eza -lha --icons=auto --sort=name --group-directories-first";
       ld = "eza -lhD --icons=auto";
       ".." = "cd ..";
+      "..." = "cd ../..";
+      ".4" = "cd ../../..";
+      ".5" = "cd ../../../..";
       v = "nvim";
       se = "sudoedit";
       ff = "fastfetch";
@@ -37,5 +40,9 @@
       plugins = [ "git" "sudo" ];
       theme = "agnoster"; # blinks is also really nice
     };
+
+    initExtra = [
+      "zoxide init --cmd cd zsh"
+    ];
   };
 }
