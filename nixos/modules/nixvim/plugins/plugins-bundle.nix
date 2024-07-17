@@ -5,6 +5,7 @@
     ./neotree.nix
     ./mini.nix
     ./comment.nix
+    ./fugitive.nix
     ./toggleterm.nix
     ./telescope.nix
     ./barbar.nix
