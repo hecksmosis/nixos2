@@ -36,12 +36,21 @@
     #   };
     # };
 
+    luasnip.enable = true;
+
+    cmp_luasnip.enable = true;
+    cmp-nvim-lsp.enable = true;
+
     lsp = {
       enable = true;
       servers = {
         nil-ls.enable = true;
         gopls.enable = true;
-        rust-analyzer.enable = true;
+        rust-analyzer = {
+          enable = true;
+          installCargo = true;
+          installRustc = true;
+        };
         lua_ls.enable = true;
         zls.enable = true;
       };
