@@ -128,7 +128,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/Downloads/nixos-chan.png"
+        "swww img ./Wallpaper.jpg"
         "dunst"
         "waybar"
         "blueman-applet"

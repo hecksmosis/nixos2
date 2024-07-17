@@ -62,6 +62,7 @@
     zoxide
     ripgrep
     udiskie
+    git-credential-oauth
 
     # GUI utils
     feh
