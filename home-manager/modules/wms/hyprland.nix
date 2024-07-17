@@ -127,7 +127,7 @@
       ];
 
       exec-once = [
-        "swww init --format xrgb"
+        "swww-daemon --format xrgb"
         "swww img ./Wallpaper.jpg"
         "dunst"
         "waybar"
