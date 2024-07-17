@@ -1,12 +1,12 @@
 {
   programs.nixvim = {
-
     clipboard = {
       register = "unnamedplus";
       providers.wl-copy.enable = true;
     };
 
     opts = {
+      whichwrap = "<>[]hl";
       updatetime = 100; # Faster completion
 
       relativenumber = true; # Relative line numbers
@@ -53,6 +53,9 @@
 
       foldlevel = 99; # Folds with a level higher than this number will be closed
       completeopt = ["menu" "menuone" "noselect"]; # For CMP plugin
+
+      timeout = false;
+      ttimeout = false;
     };
   };
 }

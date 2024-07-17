@@ -20,6 +20,11 @@
           "<A-<>" = ":BufferMovePrevious<CR>";
           "<leader>x" = ":BufferClose<CR>";
 
+          # Terminal
+          "<leader>h" = ":ToggleTerm direction=horizontal<CR>";
+          "<leader>v" = ":ToggleTerm direction=vertical<CR>";
+          "<leader>tf" = ":ToggleTerm direction=float<CR>";
+
           # Open Neotree
           "<C-n>" = ":Neotree toggle<CR>";
 

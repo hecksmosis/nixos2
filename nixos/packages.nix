@@ -63,6 +63,7 @@
     ripgrep
     udiskie
     git-credential-oauth
+    eza
 
     # GUI utils
     feh

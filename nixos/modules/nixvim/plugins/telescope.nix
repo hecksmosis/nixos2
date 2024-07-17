@@ -14,7 +14,6 @@
       "<leader>fz" = "current_buffer_fuzzy_find";
       "<leader>cm" = "git_commits";
       "<leader>gt" = "git_status";
-      "<leader>pt" = "terms";
       "<leader>ma" = "marks";
     };
 

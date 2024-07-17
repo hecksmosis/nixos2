@@ -18,8 +18,11 @@
       conf = "nvim ${flakeDir}/nixos/configuration.nix";
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
-      ll = "ls -l";
-      la = "ls -la";
+      l = "eza -lh --icons=auto";
+      ls = "eza -1 --icons=auto";
+      ll = "eza -lha --icons=auto --sort=name --group-directories-first";
+      ld = "eza -lhD --icons=auto";
+      ".." = "cd ..";
       v = "nvim";
       se = "sudoedit";
       ff = "fastfetch";
