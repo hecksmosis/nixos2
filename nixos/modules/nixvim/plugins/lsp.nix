@@ -40,6 +40,10 @@
       enable = true;
       servers = {
         nil-ls.enable = true;
+        gopls.enable = true;
+        rust-analyzer.enable = true;
+        lua_ls.enable = true;
+        zls.enable = true;
       };
     };
   };
