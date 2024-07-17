@@ -4,12 +4,18 @@
 
     keymaps = {
       "<leader>ff" = "find_files";
+      "<leader>fa" = "find_files follow=true no_ignore=true hidden=true";
       "<leader>b" = "buffers";
       "<leader>fh" = "help_tags";
       "<leader>gf" = "git_files";
       "<leader>of" = "oldfiles";
-      # "<leader>fg" = "live_grep";
-      # "<leader>fd" = "diagnostics";
+      "<leader>fg" = "live_grep";
+      "<leader>fd" = "diagnostics";
+      "<leader>fz" = "current_buffer_fuzzy_find";
+      "<leader>cm" = "git_commits";
+      "<leader>gt" = "git_status";
+      "<leader>pt" = "terms";
+      "<leader>ma" = "marks";
     };
 
     settings.defaults = {

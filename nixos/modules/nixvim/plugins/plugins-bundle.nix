@@ -5,7 +5,7 @@
     ./neotree.nix
     ./mini.nix
     ./comment.nix
-    ./floaterm.nix
+    ./toggleterm.nix
     ./telescope.nix
     ./barbar.nix
     ./nix.nix

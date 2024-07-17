@@ -18,6 +18,7 @@
           "<S-Tab>" = ":BufferPrevious<CR>";
           "<A->>" = ":BufferMoveNext<CR>";
           "<A-<>" = ":BufferMovePrevious<CR>";
+          "<leader>x" = ":BufferClose<CR>";
 
           # Open Neotree
           "<C-n>" = ":Neotree toggle<CR>";
