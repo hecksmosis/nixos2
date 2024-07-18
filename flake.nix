@@ -9,13 +9,29 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly-overlay = {
+      # TODO: set this override again in future
+      # inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/neovim-nightly-overlay";
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
     let
+      overlays = [
+            inputs.neovim-nightly-overlay.overlays.default
+        ];
       system = "x86_64-linux";
+config = {
+    allowUnfree = true;
+    permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
+  };
+      nixosPackages = import nixpkgs {
+            inherit system config overlays;
+        }
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        pkgs = nixosPackages;
         specialArgs = {
           pkgs-stable = import nixpkgs-stable {
             inherit system;
