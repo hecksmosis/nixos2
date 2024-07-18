@@ -34,9 +34,6 @@
       line-clear-color="1f1d2e";
       line-wrong-color="1f1d2e";
       bs-hl-color="31748f";
-      grace=2;
-      grace-no-mouse=true;
-      grace-no-touch=true;
       datestr="%a, %B %e";
       timestr="%I:%M";
       fade-in=0.3;

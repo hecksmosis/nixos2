@@ -7,7 +7,7 @@
 
     shellAliases =
       let
-        flakeDir = "~/nixos";
+        flakeDir = "~/nixos2"; # Extract this into a global config
       in {
       rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
       upd = "nix flake update ${flakeDir}";

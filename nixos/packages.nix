@@ -64,6 +64,7 @@
     udiskie
     git-credential-oauth
     eza
+    vim
 
     # GUI utils
     feh

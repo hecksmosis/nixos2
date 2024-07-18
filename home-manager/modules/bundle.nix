@@ -5,6 +5,7 @@
     ./htop.nix
     ./alacritty.nix
     ./qt.nix
+    ./neovim
 
     ./wms/hyprland.nix
     ./wms/swaylock.nix

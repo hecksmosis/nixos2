@@ -5,7 +5,7 @@
 
     settings = {
       "$mainMod" = "SUPER";
-      "$scrPath" = "~/nixos/home-manager/modules/wms/scripts";
+      "$scrPath" = "~/nixos2/home-manager/modules/wms/scripts"; # Extract this to global config
 
       monitor = ",preferred,auto,auto";
 
@@ -256,8 +256,8 @@
         # Configuration files
         ''$mainMod SHIFT, N, exec, alacritty -e sh -c "rb"''
         ''$mainMod SHIFT, C, exec, alacritty -e sh -c "conf"''
-        ''$mainMod SHIFT, Q, exec, alacritty -e sh -c "nvim ~/nixos/home-manager/modules/wms/hyprland.nix"''
-        ''$mainMod SHIFT, W, exec, alacritty -e sh -c "nvim ~/nixos/home-manager/modules/wms/waybar.nix''
+        ''$mainMod SHIFT, Q, exec, alacritty -e sh -c "nvim ~/nixos2/home-manager/modules/wms/hyprland.nix"'' # Extract to global
+        ''$mainMod SHIFT, W, exec, alacritty -e sh -c "nvim ~/nixos2/home-manager/modules/wms/waybar.nix'' # Extract to global
 
         # Disable all effects
         "$mainMod ALT, G, exec, $scrPath/gamemode.sh"
