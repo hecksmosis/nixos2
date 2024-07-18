@@ -19,7 +19,7 @@
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
     let
       overlays = [
-            inputs.neovim-nightly-overlay.overlays.default
+            inputs.neovim-nightly-overlay.overlays.default;
         ];
       system = "x86_64-linux";
 config = {
@@ -28,7 +28,7 @@ config = {
   };
       nixosPackages = import nixpkgs {
             inherit system config overlays;
-        }
+        };
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         pkgs = nixosPackages;
