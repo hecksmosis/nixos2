@@ -72,6 +72,6 @@ in
   # we hardcode a symlink here so that we can refer to it in our lazy config
   home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
     recursive = true;
-    source = treesitter-parsers;
+    source = treesitterWithGrammars;
   };
 }
