@@ -1,4 +1,4 @@
 return {
-	"folke/whick-key.nvim",
+	"folke/which-key.nvim",
 	event = "VeryLazy",
 }

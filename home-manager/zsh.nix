@@ -41,8 +41,6 @@
       theme = "agnoster"; # blinks is also really nice
     };
 
-    initExtra = 
-      "zoxide init --cmd cd zsh"
-    ;
+    initExtra = "eval \"$(zoxide init --cmd cd zsh)\"";
   };
 }

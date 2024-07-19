@@ -1,4 +1,4 @@
 return {
-	"norcalli/nvim-colorizer.nvim",
+	"norcalli/nvim-colorizer.lua",
 	event = { "BufReadPost", "BufNewFile" },
 }
