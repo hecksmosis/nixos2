@@ -12,7 +12,6 @@ nmmap("<C-c>", ":b#<CR>")
 nmmap("<C-x>", ":close<CR>")
 
 -- Save file
-nmmap("<leader>s", ":w<CR>")
 nmmap("<C-s>", ":w<CR>")
 
 -- Window movement
@@ -69,9 +68,9 @@ nmmap("<leader>fa", ":Telescope find_files follow=true no_ignore=true hidden=tru
 nmmap("<leader>b", builtin.buffers)
 nmmap("<leader>fh", builtin.help_tags)
 nmmap("<leader>gf", builtin.git_files)
-nmmap("<leader>of", builtin.oldfiles)
+nmmap("<leader>fo", builtin.oldfiles)
 nmmap("<leader>fg", builtin.live_grep)
-nmmap("<leader>fd", builtin.diagnostics)
+nmmap("<leader>fp", builtin.diagnostics)
 nmmap("<leader>fz", builtin.current_buffer_fuzzy_find)
 nmmap("<leader>cm", builtin.git_commits)
 nmmap("<leader>gt", builtin.git_status)
@@ -80,8 +79,23 @@ nmmap("<leader>ma", builtin.marks)
 -- Format file
 nmmap("<leader>fm", require("conform").format)
 
--- Oil.nvim
+-- oil.nvim
 nmmap("<leader>o", require("oil").open)
 
+-- persistence.nvim
+nmmap("<leader>qs", function()
+	require("persistence").load()
+end)
+nmmap("<leader>qS", function()
+	require("persistence").select()
+end)
+nmmap("<leader>ql", function()
+	require("persistence").load({ last = true })
+end)
+nmmap("<leader>qd", function()
+	require("persistence").stop()
+end)
+
+-- Visual mode move line
 vmmap("K", ":m '<-2<CR>gv=gv")
 vmmap("J", ":m '>+1<CR>gv=gv")
