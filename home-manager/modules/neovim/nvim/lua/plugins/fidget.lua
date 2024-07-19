@@ -1,4 +1,3 @@
 return {
-	"j-hui/fidget.nvim",
-	event = "LspAction",
+    "j-hui/fidget.nvim",
 }
