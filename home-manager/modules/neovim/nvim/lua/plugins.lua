@@ -19,3 +19,5 @@ require("lazy").setup("plugins", {
         fallback = false,
     },
 })
+
+vim.opt.runtimepath:append("${treesitter-parsers}")
