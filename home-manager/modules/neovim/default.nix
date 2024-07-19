@@ -1,6 +1,5 @@
 { pkgs, ... }:
 let
-
   treesitterWithGrammars = (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
     p.bash
     p.comment
@@ -75,5 +74,4 @@ in
     recursive = true;
     source = treesitterWithGrammars;
   };
-
 }
