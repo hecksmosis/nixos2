@@ -1,6 +1,7 @@
 {
   imports = [
     ./bootloader.nix
+    ./tailscale.nix
     ./sound.nix
     ./zram.nix
     ./env.nix
